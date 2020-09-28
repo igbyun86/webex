@@ -24,4 +24,10 @@ public class HelloController {
 
         return "/home";
     }
+
+    @RequestMapping(method = RequestMethod.GET, value="/home2")
+    public String main2(ModelMap model, HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+        return "/home";
+    }
 }
