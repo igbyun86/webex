@@ -11,6 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class HelloController {
 
+    /**
+     * home page
+     * @param model
+     * @param request
+     * @param response
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(method = RequestMethod.GET, value="/home")
     public String main(ModelMap model, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
